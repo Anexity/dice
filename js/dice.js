@@ -1,5 +1,5 @@
 var cursel1 = 4; 
-var cursel2 = 2;
+var cursel2 = 1;
 var curselint = cursel1 - 2;
 
 function select4() {
@@ -68,65 +68,18 @@ function select20() {
     console.log(cursel1)
 };
 
-function selp2() {
-    cursel2 = 2;
-    document.getElementById("p2").classList.add("active");
-    document.getElementById("p1").classList.remove("active");
-    document.getElementById("neu").classList.remove("active");
-    document.getElementById("m1").classList.remove("active");
-    document.getElementById("m2").classList.remove("active");
-    console.log(cursel2)
-};
 
-function selp1() {
-    cursel2 = 1;
-    document.getElementById("p2").classList.remove("active");
-    document.getElementById("p1").classList.add("active");
-    document.getElementById("neu").classList.remove("active");
-    document.getElementById("m1").classList.remove("active");
-    document.getElementById("m2").classList.remove("active");
-    console.log(cursel2)
-};
-
-function selp0() {
-    cursel2 = 0;
-    document.getElementById("p2").classList.remove("active");
-    document.getElementById("p1").classList.remove("active");
-    document.getElementById("neu").classList.add("active");
-    document.getElementById("m1").classList.remove("active");
-    document.getElementById("m2").classList.remove("active");
-    console.log(cursel2)
-};
-
-function selm1() {
-    cursel2 = -1;
-    document.getElementById("p2").classList.remove("active");
-    document.getElementById("p1").classList.remove("active");
-    document.getElementById("neu").classList.remove("active");
-    document.getElementById("m1").classList.add("active");
-    document.getElementById("m2").classList.remove("active");
-    console.log(cursel2)
-};
-
-function selm2() {
-    cursel2 = -2;
-    document.getElementById("p2").classList.remove("active");
-    document.getElementById("p1").classList.remove("active");
-    document.getElementById("neu").classList.remove("active");
-    document.getElementById("m1").classList.remove("active");
-    document.getElementById("m2").classList.add("active");
-    console.log(cursel2)
-};
 
 function calcnum() {
+    var Int2 = 0;
+    var cursel2 = document.getElementById("p2").value;
     curselint = cursel1 - 2;
-    var Int = parseInt(cursel1)
+    var Int = parseInt(cursel1);
+    if (cursel2 = NaN) Int2 = parseInt(cursel2);
     var raw = Math.floor(Math.random() * (Int - 0 + 1));
-    var calc = raw + parseInt(cursel2);
+    var calc = raw + Int2;
     if (calc < 1) calc = 1;
-    var Int2 = parseInt(cursel2)
-    if (calc > Int) calc = cursel1;
     if (calc > curselint) {document.getElementById("rolled").style.color = "#ff66ffcc"} else {document.getElementById("rolled").style.color = "#ffffff"};
     document.getElementById("rolled").innerHTML = calc;
     document.getElementById("raw").innerHTML = raw;
-}
+};
