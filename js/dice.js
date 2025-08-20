@@ -1,5 +1,5 @@
 var cursel1 = 4; 
-var cursel2 = 1;
+var cursel2 = 2;
 var curselint = cursel1 - 2;
 
 function select4() {
