@@ -1,5 +1,4 @@
 var cursel1 = 4; 
-var cursel2 = 2;
 var curselint = cursel1 - 2;
 
 function select4() {
@@ -71,11 +70,13 @@ function select20() {
 
 
 function calcnum() {
-    var Int2 = 0;
+    var Int2 = NaN;
     var cursel2 = document.getElementById("p2").value;
+    console.log(cursel2);
     curselint = cursel1 - 2;
     var Int = parseInt(cursel1);
-    if (cursel2 = NaN) Int2 = parseInt(cursel2);
+    if (cursel2 != "") {Int2 = parseInt(cursel2)} else {Int2 = 0};
+    console.log(Int2);
     var raw = Math.floor(Math.random() * (Int - 0 + 1));
     var calc = raw + Int2;
     if (calc < 1) calc = 1;
