@@ -125,5 +125,5 @@ function calcnum() {
     var calc = raw + parseInt(cursel2);
     if (calc < 0) calc = 0;
     document.getElementById("rolled").innerHTML = calc
-    if (calc > curselint) {document.getElementById("rolled").style.color = "#ff0000"} else {document.getElementById("rolled").style.color = "#ffffff"}
+    if (calc > curselint) {document.getElementById("rolled").style.color = "#ff66ffcc"} else {document.getElementById("rolled").style.color = "#ffffff"};
 }

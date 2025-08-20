@@ -5,13 +5,28 @@
 }
 
 .main {
-    background-image: url(../asset/pexels-iriser-724712.jpg);
-    background-position: center;
-    background-size: cover;
+	background: radial-gradient(#050010, #000030, #200020, #000000);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: space-around;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	80% {
+		background-position: 0% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .sides {
@@ -19,22 +34,21 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 100vw;
+    width: 90vw;
 }
 
 .side {
     display: flex;
     height: 100vh;
-    width: 30vw;
+    width: 25vw;
 }
 
 .settings {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 26vw;
+    width: 15vw;
     height: 50vh;
-    background-color: #ffffff40;
     border-radius: 2vh;
 }
 
@@ -51,28 +65,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #303030;
     color: white;
     transition: 0.3s;
     border-radius: 15px;
     margin: .5vh;
     font-family: med;
+    border: #ffffff50 1px solid;
 }
 
 .selection:hover {
-    background-color: #404040;
+    border: #ffffffcc 1px solid;
     transition: 0.3s;
 }
 
 .active {
-    background-color: #505050;
-    color: #4099ff;
+    border: #ff66ffcc 1px solid;    
+    color: #ff66ffcc;
     font-family: bold;
+    transition: 0.3s;
 }
 
 .button:active {
-    background-color: #505050;
-    color: #4099ff;
+    border: #ff66ffcc 1px solid;
+    color: #ff66ff;
     font-family: bold;
 }
 
