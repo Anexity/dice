@@ -71,6 +71,7 @@
     margin: .5vh;
     font-family: med;
     border: #ffffff50 1px solid;
+    cursor: pointer;
 }
 
 .selection:hover {
