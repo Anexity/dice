@@ -124,6 +124,9 @@ function calcnum() {
     var raw = Math.floor(Math.random() * (Int - 0 + 1));
     var calc = raw + parseInt(cursel2);
     if (calc < 0) calc = 0;
-    document.getElementById("rolled").innerHTML = calc
+    var Int2 = parseInt(cursel2)
+    if (calc > Int) calc = cursel1;
     if (calc > curselint) {document.getElementById("rolled").style.color = "#ff66ffcc"} else {document.getElementById("rolled").style.color = "#ffffff"};
+    document.getElementById("rolled").innerHTML = calc;
+    document.getElementById("raw").innerHTML = raw;
 }

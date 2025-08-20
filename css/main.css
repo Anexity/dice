@@ -102,6 +102,20 @@
     color: white
 }
 
+.rolledraw {
+    color: white;
+    font-family: lite;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    width: auto;
+}
+
+.pad {
+    padding-right: 0.5vw;
+}
+
+
 @font-face {
     font-family: med;
     src: url(../asset/fonts/Outfit-Medium.ttf)
