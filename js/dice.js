@@ -123,7 +123,7 @@ function calcnum() {
     var Int = parseInt(cursel1)
     var raw = Math.floor(Math.random() * (Int - 0 + 1));
     var calc = raw + parseInt(cursel2);
-    if (calc < 0) calc = 0;
+    if (calc < 1) calc = 1;
     var Int2 = parseInt(cursel2)
     if (calc > Int) calc = cursel1;
     if (calc > curselint) {document.getElementById("rolled").style.color = "#ff66ffcc"} else {document.getElementById("rolled").style.color = "#ffffff"};
