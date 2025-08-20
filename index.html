@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Tool</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="./js/dice.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="sides">
+            <div class="side settings">
+                    <div class="selector1">
+                        <a class="D4 selection active" id="d4" onclick="select4()">
+                            D4
+                        </a>
+                        <a class="D6 selection" id="d6" onclick="select6()">
+                            D6
+                        </a>
+                        <a class="D8 selection" id="d8" onclick="select8()">
+                            D8
+                        </a>
+                        <a class="D10 selection" id="d10" onclick="select10()">
+                            D10 
+                        </a>
+                        <a class="D12 selection" id="d12" onclick="select12()">
+                            D12
+                        </a>
+                        <a class="D20 selection" id="d20" onclick="select20()">
+                            D20
+                        </a>
+                    </div>
+                </div>
+                <div class="side settings">
+                    <div class="selector1">
+                        <a class="selection active" id="p2" onclick="selp2()">
+                            +2
+                        </a>
+                        <a class="selection" id="p1" onclick="selp1()">
+                            +1
+                        </a>
+                        <a class="selection" id="neu" onclick="selp0()">
+                            0
+                        </a>
+                        <a class="selection" id="m1" onclick="selm1()">
+                            -1 
+                        </a>
+                        <a class="selection" id="m2" onclick="selm2()">
+                            -2
+                        </a>
+                    </div>
+                </div>
+                <div class="side settings column">
+                    <a class="button selection" onclick="calcnum()">
+                        Roll!
+                    </a>
+                    <div class="rollednumber">
+                        <p id="rolled">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
